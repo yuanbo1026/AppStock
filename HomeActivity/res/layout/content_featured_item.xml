@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/RealWhite"
+    >
+
+    <!-- Best solution for height would be wrap content and but andoid would not scale the image correctly -->
+
+	
+	   
+
+    <ImageView
+        android:id="@+id/i_feat_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+    
+    <RelativeLayout 
+        android:layout_marginLeft="15dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignTop="@id/i_feat_logo"
+	    android:layout_alignLeft="@id/i_feat_logo"
+	    android:id="@+id/deal_flag_container"
+	    android:visibility="gone"
+	    >
+	   	<ImageView 
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_alignTop="@+id/tv_price_cut"
+	   	    android:layout_alignLeft="@id/tv_price_cut"
+	   	    android:layout_alignRight="@id/tv_price_cut"
+	   	    android:layout_alignBottom="@+id/black_rabatt"
+	   	    android:src="@drawable/price_cut_backgound"
+	   	    android:scaleType="fitXY"
+	   	    /> 
+	   	 <com.technisat.appstock.app.CustomTextView
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_alignParentTop="true"
+	   	    android:text="15%"
+	   	    android:textStyle="bold"
+	   	    android:textSize="18dp"
+	   	    android:textColor="@color/RealWhite"
+	   	    android:paddingTop="5dp"
+			android:paddingLeft="7dp"
+	   	    android:paddingRight="7dp"
+	   	    android:id="@id/tv_price_cut"
+	   	    />
+	   	 <com.technisat.appstock.app.CustomTextView
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_width="wrap_content"
+	   	    android:text="RABATT"
+	   	    android:textSize="9sp"
+	   	    android:textStyle="bold"
+	   	    android:layout_centerHorizontal="true"
+	   	    android:layout_marginTop="-7dp"
+	   	    android:textColor="@color/AppStockPriceCutRabatt"
+	   	    android:paddingBottom="18dp"
+	   	    android:id="@id/black_rabatt"
+	   	    android:layout_below="@id/tv_price_cut"
+	   	    />
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/i_feat_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/i_feat_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_feat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/i_feat_icon"
+            android:layout_toRightOf="@id/i_feat_icon"
+            android:includeFontPadding="false"
+            android:layout_marginTop="-6dp"
+            android:text="Test App name"
+            android:textColor="@color/AppStockDrawerLightBlue"
+            android:textSize="20sp"
+            />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_feat_teaser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_feat_name"
+            android:layout_below="@id/tv_feat_name"
+            android:layout_marginTop="-5dp"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textSize="14sp"
+            android:textColor="@color/AppStockGrey"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/tv_feat_price_container"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/i_feat_logo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/price_gradient_background"
+        >
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_feat_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="9dp"
+            android:layout_marginTop="12dp"
+            android:text="0,99€"
+            android:textColor="@color/RealWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/tv_feat_price"
+            android:paddingLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:paddingRight="7dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/previous_price_container"
+            android:visibility="gone"
+            >
+        
+        <com.technisat.appstock.app.CustomTextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="1.00€"
+            android:textColor="@color/AppStockPriceCutRabatt"
+            android:textSize="11sp"
+            android:id="@+id/prev_price"
+            />
+        
+        <View
+            android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:layout_alignRight="@id/prev_price"
+            android:layout_alignLeft="@id/prev_price"
+            android:layout_centerVertical="true"
+            android:background="#F20A0D"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    
+    <ProgressBar
+        android:id="@+id/pb_feat_spinner"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

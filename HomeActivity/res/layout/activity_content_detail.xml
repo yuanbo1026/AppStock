@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RealWhite"
+    tools:context=".AllContentTypesActivity" >
+
+    <com.technisat.appstock.content.detail.ContentItemView
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+    </com.technisat.appstock.content.detail.ContentItemView>
+
+    <ScrollView
+        android:id="@+id/sv_imprint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_detail_size"
+        android:layout_below="@id/header_container" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_detail_like_dislike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="30dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/tv_detail_like"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@color/AppStockDrawerDarkGreen"
+                        android:padding="7dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/like_arrow_up" />
+
+                    <com.technisat.appstock.app.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@color/AppStockDrawerGreen"
+                        android:gravity="center"
+                        android:text="mag ich"
+                        android:textColor="@color/RealWhite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_detail_dislike"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/like_empty_button_background"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:padding="7dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/like_arrow_down" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="45dp"
+                        android:background="@color/AppStockDrawerGreen" />
+
+                    <com.technisat.appstock.app.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="mag ich nicht"
+                        android:textColor="@color/AppStockDrawerGreen" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_detail_header_screenshot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_detail_like_dislike"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:text="SCREENSHOTS"
+                android:textColor="@color/AppStockDrawerLightBlue"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/screenshotRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_detail_header_screenshot">
+
+                <ProgressBar
+                    android:id="@+id/pb_feat_spinner2"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.6"
+                   	android:scaleY="0.6"
+                    android:visibility="gone" />
+
+                <HorizontalScrollView
+                    android:id="@+id/sv_detail_screenshot_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_magazine_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" />
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_detail_header_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screenshotRelativeLayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="BESCHREIBUNG"
+                android:textColor="@color/AppStockDrawerLightBlue"
+                android:textSize="17sp" />
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_detail_description_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_header_description"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Es herrscht Bürgerkrieg. Die Rebellen, deren Raumschiffe von einem geheimen Stützpunkt aus angreifen, haben ihren ersten Sieg gegen das böse galaktische Imperium errungen.\n Während der Schlacht ist es Spionen der Rebellen gelungen, Geheimpläne über die absolute Waffe des Imperiums in ihren Besitz zu bringen, den TODESSTERN, eine Raumstation, deren Feuerkraft ausreicht, um einen ganzen Planeten zu vernichten."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/AppStockDrawerGrey" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail_header_Comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_description_text"
+                android:orientation="vertical" >
+
+                <com.technisat.appstock.app.CustomTextView
+                    android:id="@+id/tv_detail_header_Comments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="KOMMENTARE"
+                    android:textColor="@color/AppStockDrawerLightBlue"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_detail_header_Comments"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_detail_lastupdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:text="letztes Update: vor drei Tagen"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockGrey" />
+
+</RelativeLayout>

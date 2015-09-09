@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/AppStockDrawerLightGrey"
+    tools:context=".content.detail.ContentItemView" >
+
+    <ImageView
+        android:id="@+id/i_item_icon"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/i_item_icon"
+        android:background="@null" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_price_cut"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@id/i_item_icon"
+        android:layout_alignTop="@id/i_item_icon"
+        android:background="@drawable/price_cut_backgound"
+        android:lines="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:text="50%"
+        android:textColor="@color/RealWhite"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/i_item_update_or_install"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="invisible" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/i_item_icon"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/btn_item_buy_update_install_open"
+        android:layout_toRightOf="@id/i_item_icon"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/AppStockDrawerTrueBlue"
+        android:textSize="17sp" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_developer_name"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignLeft="@id/tv_item_name"
+        android:layout_below="@id/tv_item_name"
+        android:layout_toLeftOf="@id/i_item_update_or_install"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/i_item_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@id/tv_item_name"
+        android:layout_below="@id/tv_item_developer_name" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_like_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/i_item_arrow"
+        android:layout_alignTop="@id/i_item_arrow"
+        android:layout_toLeftOf="@id/i_item_update_or_install"
+        android:layout_toRightOf="@id/i_item_arrow"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockDrawerGreen"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/iv_special_deal_flag"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@id/tv_item_name"
+        android:layout_below="@id/i_item_arrow"
+        android:src="@drawable/ic_special_deal_flag"
+        android:visibility="invisible" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_special_deal_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_special_deal_flag"
+        android:layout_alignLeft="@id/tv_item_like_text"
+        android:layout_alignTop="@id/iv_special_deal_flag"
+        android:layout_below="@id/tv_item_like_text"
+        android:layout_marginTop="-1dp"
+        android:gravity="center_vertical"
+        android:text="50% Nachlass bis 31.08.2014"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockDrawerLightBlue"
+        android:textSize="11sp"
+        android:visibility="invisible" />
+
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/btn_item_buy_update_install_open"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/AppStockDrawerGreen"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Kaufen"
+        android:textColor="@color/RealWhite"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/btn_item_deinstall"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_item_buy_update_install_open"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/like_empty_button_background"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/appstock_text_uninstall"
+        android:textColor="@color/AppStockDrawerGreen"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_specialprice"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_item_buy_update_install_open"
+        android:layout_marginBottom="5dp"
+        android:background="@color/AppStockDrawerTrueBlue"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="$1.99"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fff" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignLeft="@id/btn_item_buy_update_install_open"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_item_buy_update_install_open"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/price_gradient_background"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="$1.99"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/b_cancel_download"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/btn_item_buy_update_install_open"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_item_buy_update_install_open"
+        android:background="@drawable/ic_download_close"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_download_progress"
+        android:layout_alignLeft="@+id/item_download_progress"
+        android:layout_alignRight="@+id/item_download_progress" 
+        android:layout_marginBottom="-14dp">
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textColor="@color/AppStockDrawerGreen"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/item_download_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignTop="@id/b_cancel_download"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/b_cancel_download"
+        android:layout_toRightOf="@id/i_item_icon"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:visibility="invisible" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_detail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_download_progress"
+        android:layout_alignBottom="@+id/i_item_icon"
+        android:text="645 KB"
+        android:layout_marginBottom="-5sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/line_item_crossout_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/tv_item_price"
+        android:layout_alignRight="@id/tv_item_price"
+        android:layout_alignTop="@id/tv_item_price"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/RealWhite"
+        android:visibility="gone" />
+
+</RelativeLayout>

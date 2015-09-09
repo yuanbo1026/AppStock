@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/RealWhite"
+    android:paddingBottom="15dp"
+    android:orientation="vertical"
+    >
+
+    <!-- Empty layout (0x0 dp) centered horizontally -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/AppStockDrawerLightGreen"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Martin Mauer"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        />
+    
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="14sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="09.09.2014"
+    	/>
+    
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_comment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Tolle App"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        />
+    
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="25dp"
+        android:text="Drehe un ziehe, um die Welt umzugestalten und Ida bei ihrer Erkundung zu helfen. Das Spiel ist fur alle Spieler leicht lern- und abschliessbar"
+        android:textSize="11sp"
+        android:paddingRight="25dp"
+        android:textColor="@color/AppStockDrawerGrey"
+        />
+</LinearLayout>

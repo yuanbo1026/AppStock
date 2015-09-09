@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppStockTransparentBlue" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/AppStockDrawerLightGrey"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:layout_marginBottom="15dp"
+            android:lineSpacingMultiplier="0.7"
+            android:text="@string/appstock_update_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/AppStockDrawerLightBlue" />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_current_version_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/AppStockDrawerGrey" 
+            android:visibility="gone"/>
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_lastest_version_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/AppStockDrawerGrey" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2" >
+
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/btn_no_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/appstock_update_cancel"
+                android:textColor="@color/RealWhite" />
+
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/btn_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/appstock_update_update"
+                android:textColor="@color/RealWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/update_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

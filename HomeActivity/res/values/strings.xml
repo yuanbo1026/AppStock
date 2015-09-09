@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppStock</string>
+    <string name="search_label">Suche</string>
+    <string name="search_hint">Inhalte suchen&#8230;</string>
+    <string name="loading">Loading...</string>
+    <string name="app_title">APPS</string>
+    <string name="default_title">HOME</string>
+    <string name="appstock_currency">€</string>
+    <string name="appstock_free">kostenlos</string>
+    <string name="appstock_yes">Ja</string>
+    <string name="appstock_no">Nein</string>
+    <string name="appstock.pleasewait">Bitte warten&#8230;</string>
+    <string name="appstock_allcontenttypes_title">Alle Inhalte</string>
+
+    <!-- Content types -->
+    <!-- order must match the order of the content types in the db -->
+    <string-array name="appstock_contenttypes">
+        <item>APPS</item>
+        <item>MAGAZINE</item>
+        <item>VIDEOS</item>
+    </string-array>
+
+    <!-- Drawer related stuff -->
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>"Home"</item>
+        <item>"Alle Inhalte"</item>
+        <item>"Meine Inhalte"</item>
+        <item>"Wunschliste"</item>
+        <item>"Specials Deals"</item>
+        <item>"Einstellungen"</item>
+        <item>"Impressum"</item>
+    </string-array>
+
+    <string name="appstock_menu_loggedinas">Angemeldet als:</string>
+    <string name="appstock_menu_clickhereand">Hier klicken und</string>
+    <string name="appstock_menu_loginnow">Jetzt anmelden</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/drawer_home</item>
+        <item>@drawable/drawer_alle_inhalte</item>
+        <item>@drawable/drawer_meine_inhalte</item>
+        <item>@drawable/drawer_wunshliste</item>
+        <item>@drawable/drawer_special_deals</item>
+        <item>@drawable/drawer_settings</item>
+        <item>@drawable/drawer_impressum</item>
+    </array>
+
+    <!-- Categories -->
+    <string-array name="appstock_categories">
+        <item>Featured</item>
+        <item>Top Kostenlos</item>
+        <item>Top Kostenpflichtig</item>
+    </string-array>
+
+    <string name="appstock_featured_nocontent">Leider keine Featured Inhalte in dieser Kategorie verfügbar.</string>
+    <string name="appstock_topfree_nocontent">Leider keine kostenlosen Inhalte in dieser Kategorie verfügbar.</string>
+    <string name="appstock_toppay_nocontent">Leider keine kostenpflichtigen Inhalte in dieser Kategorie verfügbar.</string>
+
+    <!-- ContentList -->
+    <string name="appstock_msg_performupdateall">Update jetzt alle Apps, bitte warten&#8230;</string>
+    <string name="appstock_msg_noInternetConnection">Bitte schalten Sie Ihre WLAN oder mobile Internetverbindung ein</string>
+
+    <!-- ContentDetail -->
+    <string name="appstock_text_wrote">schrieb:</string>
+    <string name="appstock_text_kb">kb</string>
+    <string name="appstock_text_lastupdate">Letztes Update:</string>
+
+    <!-- Content.MyContent/Wishlist/SpecialDeal -->
+    <string name="appstock_content_my_content">Meine Inhalte</string>
+    <string name="appstock_content_wishlist">Meine Wunschliste</string>
+    <string name="appstock_content_special_deal">Special Deals</string>
+    <string name="appstock_content_search">Suchergebnisse</string>
+    <string name="appstock_msg_favremoved">Inhalt von deiner Wunschliste entfernt.</string>
+    <string name="appstock_msg_favadded">Inhalt zu deine Wunschliste hinzugefügt.</string>
+    <string name="appstock.msg_pleaselogintowish">Du musst angemeldet sein, um deine Wunschliste bearbeiten zu installieren.</string>
+    <string name="appstock_msg_likedislikesuccessful">Deine Bewertung ist eingegangen.</string>
+    <string name="appstock_text_xofxlike">###x### von ###y### mögen es</string>
+    <string name="appstock_text_bethefirst">Noch nicht genug Bewertungen.</string>
+    <string name="appstock_text_onlynow">Nur für kurze Zeit:</string>
+    <string name="appstock_text_pleaselogintobuy">Bitte logge Dich mit Deinem Account ein, um %s zu kaufen.</string>
+    <string name="appstock_text_pleaselogintoinstall">Bitte logge Dich mit Deinem Account ein, um %s zu installieren.</string>
+    <string name="appstock_text_pleaselogintodownload">Bitte logge Dich mit Deinem Account ein, um %s herunter zu laden.</string>
+    <string name="appstock_text_pleaselogintoaddtowishlist">Bitte logge Dich mit Deinem Account ein, um %s Deiner Wunschliste hinzuzufügen.</string>
+    <string name="appstock_caption_uninstall">Inhalt entfernen&#8230;</string>
+    <string name="appstock_text_alert_uninstall">Soll ###x### wirklich von Deinem Gerät entfernt werden?</string>
+    <string name="appstock_text_uninstall_complete">###x### wurde erfolgreich von Deinem Gerät entfernt.</string>
+    <string name="appstock_text_uninstall_failed">"Es ist ein Fehler beim löschen von ###x### aufgetreten"</string>
+    <string name="appstock_text_open">Öffnen</string>
+    <string name="appstock_text_install">Installieren</string>
+    <string name="appstock_text_uninstall">Deinstallieren</string>
+    <string name="appstock_text_uninstall_magazine">Löschen</string>
+    <string name="appstock_text_download">Download</string>
+    <string name="appstock_text_update">Update</string>
+    <string name="appstock_text_buy">Kaufen</string>
+    <string name="add_wishlist">Auf die Wunschliste</string>
+    <string name="remove_wishlist">Aus Wunschliste entfernen</string>
+    
+    <!-- Update -->
+    <string name="appstock_update_title">Für Ihre akutelle AppStock 
+		Version liegt ein Update vor.
+		Jetzt auf die neuste Version
+		updaten?
+        </string>
+    <string name="appstock_update_cancel">Cancel</string>
+    <string name="appstock_update_update">Update</string>
+
+    <!-- Payment -->
+    <string name="appstock_text_verifyingpayment">Ihre Zahlung wird verifiziert&#8230;</string>
+    <string name="appstock_text_hasbeenbought">###x### wurde kauft.</string>
+    <string name="appstock_text_startingpayment">Starte Vorgang&#8230;</string>
+
+    <!-- Register as developer -->
+    <string name="appstock_text_upgradetodeveloper">Entwickler account</string>
+    <string name="appstock_text_acceptguidelines">Bitte bestätige die Richtlinien.</string>
+    <string name="appstock_text_incorrect_bic">Incorrect BIC.</string>
+    <string name="appstock_text_incorrect_iban">Incorrect IBAN.</string>
+    <string name="appstock_text_accountdata">Bitte trage ein gültiges Konto ein.</string>
+    <string name="appstock_text_adult">Du musst mindestens 18 Jahre alt sein!</string>
+
+    <!-- Settings -->
+    <string name="appstock_settings_oldpassword">Altes Passwort</string>
+    <string name="appstock_settings_stars">*******</string>
+    <string name="appstock_settings_devinfo">Informationen für Entwickler</string>
+    <string name="appstock_settings_logout">Möchtest Du dich wirklich abmelden?</string>
+    <string name="appstock_settings_logoutsuccess">Du wurdest erfolgreich abgemeldet.</string>
+    <string name="appstock_settings_updatingaccount">Aktualisiere Accountdaten&#8230;</string>
+    <string name="appstock_settings_updateaccountsuccess">Accountdaten wurden erfolgreich geändert.</string>
+    <string name="appstock_settings_retry">Bitte überprüfe deine Eingaben und versuche es erneut.</string>
+    <string name="appstock_settings_updateaccountfailed">Accountdaten konntent nicht überprüft und übernommen werden. Bitte versuche es später erneut.</string>
+
+    <!-- Download -->
+    <string name="appstock_download_downloading">###x### wird heruntergeladen&#8230;</string>
+    <string name="appstock_download_downloaded">###x### wurde heruntergeladen.</string>
+    <string name="appstock_download_preparing">Download wird vorbereitet&#8230;</string>
+    <string name="appstock_download_done_open">Download abgschlossen. Hier berühren zum öffnen.</string>
+    <string name="appstock_download_done_start">Download abgschlossen. Hier berühren zum starten.</string>
+    <string name="appstock_download_downloadof">Download von ###x###</string>
+
+    <!-- Login & Forgot password -->
+    <string name="appstock_msg_forgotpassword">Eine E-Mail wurde an Dich versandt. Dort kannst Du Dein Passwort ändern.</string>
+    <string name="appstock_msg_forgotpassword_not_found">Keine Konto mit dieser E-Mail finden.</string>
+    <string name="appstock_text_loggingin">Du wirst angemeldet&#8230;</string>
+
+    <!-- Intent Extras -->
+    <string name="appstock_extra_content">appstock_extra_content</string>
+    <string name="appstock_extra_paypal">appstock_extra_paypal</string>
+    <string name="appstock_extra_paypal_close">appstock_extra_paypal_close</string>
+    <string name="appstock_extra_category">appstock_extra_category</string>
+    <string name="appstock_extra_content_type">appstock_extra_content_type</string>
+    <string name="appstock_extra_reload">appstock_extra_reload</string>
+    <string name="appstock_extra_reload_object">appstock_extra_reload_object</string>
+
+    <!-- Actions -->
+    <string name="appstock_action_wishlist">appstock_action_wishlist</string>
+    <string name="appstock_action_my_content">appstock_action_my_content</string>
+    <string name="appstock_action_special_deal">appstock_action_special_deal</string>
+    <string name="appstock_action_search">appstock_action_search</string>
+    <string name="appstock_action_logout">appstock_action_logout</string>
+    <string name="imprintactivity.text.imprint">
+<![CDATA[
+
+        <b>Anbieter, Kontakt u. Hinweise</b><br><br>
+        <b>Anbieter</b><br>
+        TechniSat Digital GmbH<br>
+        Julius-Saxler-Straße 3<br>
+        TechniPark<br>
+        D-54550 Daun / Germany <br><br>
+        <b>Geschäftsführung</b><br>
+       	Peter Lepper, Stefan Kön,<br> 
+		Peter Kohlschmidt, Beatrix Simon-Ludwig<br>
+		<br>
+		Register und Registernummer: Amtsgericht Wittlich HRB 11561<br>
+		Umsatzsteuer-Identifikationsnummer: DE 149 932 421<br><br>
+        <b>Kontakt</b><br>
+        Telefon +49 - (0)6592 / 712-600<br>
+        Telefax +49 - (0)6592 / 4910<br>
+        Service & Support<br> +49 - (0)3925 / 9220-1800<br>
+		E-Mail <a href="mailto:info@technisat.de">info@technisat.de</a><br>
+		Website <a href=\"http://www.technisat.de\">http://www.technisat.de</a><br><br><br>
+        <b>Rechtliche Hinweise</b><br><br>
+        @ TechniSat Digital GmbH - Alle Rechte vorbehalten. Alle Angaben ohne Gewähr.<br>
+        Text, Bilder, Grafiken, Sound, Animationen und Videos sowie deren Anordnung auf www.technisat.de
+        unterliegen dem Schutz des Urheberrechts und anderer Schutzgesetze.
+        Jede unauthorisierte Nutzung der Marke TechniSat oder von TechniSat geschützter Warenzeichen, insbesondere die
+        Vermarktung von Piraterieprodukten oder die Bewerbung solcher Produkte in Verbindung mit der Marke TechniSat, wird gerichtlich verfolgt.
+        Verlinkungen auf den Inhalt dieser Seiten sind nur gestattet, wenn diese vollständig, ohne Werbeframes der linkenden
+        Seite dargestellt werden. Cross-Linking (Verlinkung auf einzelne Grafiken) zur Ausnutzung des Transfervolumens
+        von www.technisat.de ist nicht gestattet. Verstöße gegen das Copyright werden durch TechniSat gerichtlich verfolgt. <br><br>        
+		<b>Besonderer Hinweis</b><br><br>
+		        Mit Urteil vom 12. Mai 1998 hat das Landgericht Hamburg entschieden, dass man durch die Anbringung eines Links
+        die Inhalte der verlinkten Seite ggf. mit zu verantworten hat. Dies kann, so das LG, nur dadurch verhindert werden,
+        indem man sich ausdrücklich von diesen Inhalten distanziert. Wir haben auf
+        unseren Seiten Verweise (Links) zu anderen Seiten im Internet gelegt. Für alle diese Links gilt: TechniSat Digital
+        GmbH erklärt ausdrücklich, dass wir keinerlei Einfluss auf die Gestaltung und die Inhalte der verlinkten Seiten haben.
+        Deshalb distanzieren wir uns hiermit ausdrücklich von allen
+        Inhalten aller verlinkten Seiten auf www.technisat.de und machen uns diese Inhalte nicht zu Eigen. Diese Erklärung
+        gilt für alle auf unserer Internetpräsenz angezeigten Links und für alle Inhalte der Seiten, zu denen die bei uns angemeldeten Banner und Links führen. <br><br>
+		<b>Haftungsausschluss</b><br><br>
+        Die bereitgestellten Informationen auf dieser Webseite wurden sorgfältig geprüft und werden regelmäßig aktualisiert. Jedoch kann keine
+        Haftung oder Garantie dafür übernommen werden, dass alle Angaben zu jeder Zeit vollständig,
+        richtig und in letzter Aktualität dargestellt sind. Dies gilt insbesondere für alle Links zu anderen Websites,
+        auf die direkt oder indirekt verwiesen wird. Alle Angaben können ohne vorherige Ankündigung geändert, entfernt oder ergänzt werden. ]]>
+    </string>
+    <string name="validation_username_error">Falscher Benutzername. Stellen Sie sicher, dass dieser mindestens 5 Zeichen enthält</string>
+    <string name="validation_email_error">Bitte überprüfen Sie\nDie E-mail Adresse!</string>
+    <string name="validation_wrong_password_error">Falsches Passwort. Stellen Sie sicher, dass dieses mindestens 6 Zeichen enthält</string>
+    <string name="validation_passwords_match_error">Passwörter stimmen nicht überein</string>
+    <string name="register_success_toast">Account erstellt! Eine Bestätigungs. Email zum Freischalten deines. Accounts wurde an Deine Adresse gesendet</string>
+    <string name="empty_search_text">Keine Suchergebnisse gefunden</string>
+    <string name="no_application_found">Keine Anwendung war in der Lage die Datei zu öffnen</string>
+    <string name="developer_info_text">1. Melde dich mit deinen App Stock Account-Daten auf www.google.com an.\n 2. Klicke in der Navigationsleiste auf meine Inhalte und anschließend auf Neue Inhalte hinzufügen.\n 3. Fülle alle nötigen Informationen aus, damit Nutzer deinen Inhalt schneller finden \n 4. Lade deinen gewünschten Inhalt hoch und klicke auf Jetzt Einstellen. \n 5. Dein eingestellter Inhalt wird anschließend von einem unserer Mitarbeiter geprüft und freigegeben. Du wirst umgehend nach der Freischaltung per E-Mail darüber informiert.</string>
+    <string name="validation_do_not_agree_policy">Sie müssen den
+Bedingungen zustimmen.
+Bitte bestätigen Sie die
+Checkboxen.</string>
+    <string name="dummy.text.lorem">So können Sie dabei sein!</string>
+    <string name="dummy.text.loremipsum">        Wenn Sie Ihre App, Ihr Magazin bzw. Ihre Zeitung oder Ihren Film/Video auf AppStock veröffentlichen möchten, dann lassen Sie uns dies einfach per E-Mail an appstock@technisat.de wissen. Wir nehmen dann sofort Kontakt zu Ihnen auf und bringen Ihren digitalen Inhalt in den AppStock.</string>
+    <string name="user.reg.email">EMAIL</string>
+    <string name="user.reg.username">STRAßE</string>
+    <string name="user.reg.passwd">PASSWORT</string>
+    <string name="user.reg.passwd_old">ALTES PASSWORT</string>
+    <string name="user.reg.passwd_new">NEUES PASSWORT</string>
+    <string name="user.reg.passwd_new_replace">NEUES PASSWORT WIEDERHOLEN</string>
+    <string name="user.reg.streetname">STRAßE</string>
+    <string name="user.reg.str_number">NUMMER, ZUSATZ</string>
+    <string name="user.reg.zip">PLZ</string>
+    <string name="user.reg.state">ORT/STADT</string>
+    <string name="user.reg.date_of_birth">GEB. DATUM</string>
+    <string name="user.reg.lastname">NACHNAME</string>
+    <string name="user.reg.firstname">VORNAME</string>
+    <string name="user.reg.registerer">REGISTRIEREN</string>
+
+    <!-- <a href=""></a> -->
+    <string name="agree_data_secur">Ich habe die <a href="http://www.appstock.de/?page=nutzung">Nutzungsbedingungen</a>, die <a href="http://www.appstock.de/?page=agb">Allgemeinen Geschäftsbedingungen</a> sowie die <a href="http://www.appstock.de/?page=datenschutz">Datenschutzerklärung</a> gelesen und erkläre mich hiermit mit diesen einverstanden.</string>
+    <string name="agree_exec">Ich stimme der Ausführung des Vertrags vor Ablauf der Widerrufsfrist ausdrücklich zu. Ich habe zur Kenntnis genommen, dass das <a href="https://www.appstock.de/?page=widerruf">Widerrufsrecht</a> mit Beginn der Ausführung des Vertrags erlischt  </string>
+
+</resources>

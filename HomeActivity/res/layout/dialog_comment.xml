@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppStockTransparentBlue" >
+    
+    <LinearLayout 
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/AppStockDrawerLightGrey"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <com.technisat.appstock.app.CustomTextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schreibe Dein Kommentar"
+            android:gravity="center"
+            android:textColor="@color/AppStockDrawerLightBlue"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        
+        <com.technisat.appstock.app.CustomEditText
+            android:id="@+id/et_comment_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:lines="5"
+            android:minLines="5"
+            android:background="@color/RealWhite"
+            android:hint="... Dein Kommentar"
+            android:textColor="@color/AppStockDrawerGrey"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:gravity="top|left"
+            />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <com.technisat.appstock.app.CustomButton 
+                android:id="@+id/btn_rate_no_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:padding="7dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/RealWhite"
+                android:gravity="center"
+                android:text="Ohne Weiter"
+                />
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/btn_rate_with_comment" 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:padding="7dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/RealWhite"
+                android:gravity="center"
+                android:text="Senden"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

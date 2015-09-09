@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    tools:context=".content.detail.ContentDetailActivity" >
+
+    <ImageView
+        android:id="@+id/i_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/i_item_icon"
+        android:lineSpacingMultiplier="0"
+        android:text="Radiotheque"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_item_developer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_toRightOf="@+id/i_item_icon"
+        android:text="nexxoo"
+        android:textColor="@color/AppStockGrey"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/i_item_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_item_developer_name"
+        android:layout_toRightOf="@+id/i_item_icon"
+        android:src="@drawable/ic_okay" />
+
+    <TextView
+        android:id="@+id/tv_item_like_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_developer_name"
+        android:layout_toRightOf="@+id/i_item_arrow"
+        android:text="21 von 23 mögen sie"
+        android:textColor="@color/AppStockDarkBlue"
+        android:textSize="12dp" />
+
+    <!--
+         View to Price if user doesn't ownes this content
+         update_or_install view will be hided then
+    -->
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_developer_name"
+        android:paddingRight="10dp"
+        android:text="1,99€"
+        android:textColor="@color/AppStockGrey"
+        android:textSize="12sp" />
+
+    <!--
+         View to display update or install icon if user already ownes this content
+         Price view will be hided then
+    -->
+
+    <ImageView
+        android:id="@+id/i_item_update_or_install"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+    <!--
+         View to SpecialPrice if user doesn't ownes this content and it is currently a Special Deal
+         update_or_install view will be hided then
+    -->
+
+    <TextView
+        android:id="@+id/tv_item_specialprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_name"
+        android:paddingRight="10dp"
+        android:text="nur jetzt 1,49€"
+        android:textColor="@color/AppStockGrey"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line_item_crossout_old_price"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/tv_item_price"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_developer_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/AppStockRed" />
+
+    <Button
+        android:id="@+id/btn_item_buy_update_install_open"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/AppStockDrawerGreen"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/appstock_text_buy"
+        android:textColor="@color/RealWhite"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_item_deinstall"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_item_buy_update_install_open"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_states"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/appstock_text_uninstall"
+        android:textColor="@color/RealWhite"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

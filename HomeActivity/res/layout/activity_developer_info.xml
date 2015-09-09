@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllContentTypesActivity" >
+	
+    <TextView
+        android:id="@+id/tv_devinfo_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Glückwunsch!\n Du bist jetzt Entwickler"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/RealWhite"
+        android:background="#59ca50" />
+    
+    <TextView
+        android:id="@+id/tv_devinfo_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_devinfo_header"
+        android:layout_marginTop="40dp"
+        android:text="So stellst du eigene Inhalte ein:"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/AppStockDarkBlue" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_devinfo_text1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/AppStockDarkBlue" />
+    
+    <ScrollView
+        android:id="@+id/sv_imprint"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_devinfo_back"
+        android:layout_below="@id/tv_devinfo_text1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="546dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1. Melde dich mit deinen App Stock Account-Daten auf www.google.com an.\n\n 2. Klicke in der Navigationsleiste auf meine Inhalte und anschließend auf Neue Inhalte hinzufügen.\n\n 3. Fülle alle nötigen Informationen aus, damit Nutzer deinen Inhalt schneller finden \n\n 4. Lade deinen gewünschten Inhalt hoch und klicke auf Jetzt Einstellen. \n\n 5. Dein eingestellter Inhalt wird anschließend von einem unserer Mitarbeiter geprüft und freigegeben. Du wirst umgehend nach der Freischaltung per E-Mail darüber informiert."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingBottom="10dp" />
+
+    </ScrollView>
+	
+    <Button 
+        android:id="@+id/btn_devinfo_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_states"
+        android:text="zurück zum App Stock"
+        android:textColor="@color/RealWhite"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+</RelativeLayout>

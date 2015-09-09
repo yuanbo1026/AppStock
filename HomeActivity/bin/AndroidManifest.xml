@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.technisat.appstock"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>
+    
+    <supports-screens android:anyDensity="true"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.technisat.appstock.app.AppStart"
+        android:screenOrientation="portrait"
+        >
+        
+        <activity
+            android:name="com.technisat.appstock.app.InstallAppActivity"></activity>
+        
+        <activity
+            android:name="com.technisat.appstock.app.SplashScreenActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.technisat.appstock.content.detail.ContentDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+			android:label="Detail Page" >
+		    <meta-data android:name="android.app.default_searchable"
+                   android:value="com.technisat.appstock.app.BaseDrawerActivity" />	 
+		    <intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED"/>	 
+				<action android:name="android.intent.action.PACKAGE_REPLACED"/>	 
+				<action android:name="android.intent.action.PACKAGE_REMOVED"/>	 
+				<data android:scheme="package"/>	 
+		    </intent-filter>	 
+        </activity>
+        
+        <activity
+            android:name="com.technisat.appstock.app.BaseDrawerActivity"
+            android:label="@string/app_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+             >            
+            
+            <meta-data
+	            android:name="android.app.default_searchable"
+	            android:value="com.technisat.appstock.content.mycontent.MyContentActivity" />  
+            <intent-filter>
+        		<action android:name="android.intent.action.SEARCH" />
+        		<category android:name="android.intent.category.DEFAULT" />
+    		</intent-filter>
+		    <meta-data
+                android:name="android.app.searchable"
+            	android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name="com.technisat.appstock.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="Login" >
+        </activity>
+        <activity android:name="com.technisat.appstock.login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:label="Registrieren" >
+        </activity>
+        <activity android:name="com.technisat.appstock.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:label="Passwort vergessen" >
+        </activity>
+        <activity android:name="com.technisat.appstock.settings.SettingsActivity"
+            android:label="Einstellungen" >
+		</activity>
+		<activity android:name="com.technisat.appstock.settings.RegisterAsDeveloperActivity"
+		    android:screenOrientation="portrait"
+            android:label="Entwickler account" >
+        </activity>
+        <activity android:name="com.technisat.appstock.settings.DeveloperInfoActivity"
+            android:label="" >
+        </activity>
+        <activity android:name="com.technisat.appstock.content.detail.ScreenshotActivity"
+            android:label="Screenshots"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.technisat.appstock.imprint.ImprintActivity"
+            android:label="Impressum" >
+        </activity>
+        
+        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        
+    </application>
+</manifest>

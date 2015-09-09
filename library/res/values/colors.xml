@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="AppStockDarkBlue">#45818e</color>
+    <color name="AppStockGrey">#cecece</color>
+    <color name="AppStockDrawerLightGreen">#BDD875</color>
+    <color name="AppStockDrawerGreen">#95C11F</color>
+    <color name="AppStockDrawerDarkGreen">#88B316</color>
+    <color name="AppStockDrawerGrey">#ADADAD</color>
+    <color name="AppStockDrawerLightGrey">#E7E7E7</color>
+    <color name="AppStockDrawerLightBlue">#00A9B5</color>
+    <color name="AppStockDrawerTrueBlue">#009FE3</color>
+
+    <color name="AppStockTransparentBlue">#AA00A9B5</color>
+</resources>

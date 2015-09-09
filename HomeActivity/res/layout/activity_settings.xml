@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/AppStockDrawerLightGrey"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AppStockDrawerLightGrey"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:weightSum="10" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_settings_edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT BEARBEITEN"
+                android:textColor="@color/AppStockDrawerTrueBlue"
+                />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="20sp"
+                 />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="ALTES PASSWORT"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_password_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="NEUES PASSWORT"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_password_new_wdh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="NEUES PASSWORT WIEDERHOLEN"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_settings_private_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PERSÖNLICHE DATEN"
+                android:textColor="@color/AppStockDrawerTrueBlue" />
+
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:maxLines="1"               
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="VORNAME"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="NACHNAME"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/et_settings_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:background="@drawable/custom_edittext_states"
+                android:gravity="left|center_vertical"
+                android:hint="GEB. DATUM"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_streetname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="STRAßE"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="NUMMER, ZUSTATZ"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="PLZ"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+
+            <com.technisat.appstock.app.CustomEditText
+                android:id="@+id/et_settings_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"               
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext_states"
+                android:hint="ORT/STADT"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+
+            <com.technisat.appstock.app.CustomTextView
+                android:id="@+id/tv_settings_additional_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="EXTRA OPTIONEN"
+                android:textColor="@color/AppStockDrawerTrueBlue" />
+
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/btn_register_as_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"               
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/AppStockDrawerTrueBlue"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="Für Entwickler"
+                android:gravity="center"
+                android:textColor="@color/RealWhite" />
+
+            <com.technisat.appstock.app.CustomButton
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button_states"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="Abmelden"
+                android:gravity="center"
+                android:textColor="@color/RealWhite" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000" />
+    </LinearLayout>
+
+</ScrollView>

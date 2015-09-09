@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_drawer_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/RealWhite">
+ 
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/icon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher"/>
+ 
+    <com.technisat.appstock.app.CustomTextView
+        android:layout_toRightOf="@id/icon"
+        android:id="@+id/title"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"        
+        android:textSize="16sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:gravity="center_vertical"
+        android:paddingRight="40dp"/>
+
+
+</RelativeLayout>

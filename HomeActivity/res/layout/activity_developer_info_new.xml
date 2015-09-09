@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppStockDrawerLightGrey" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            >
+            
+        <com.technisat.appstock.app.CustomTextView
+	        android:id="@+id/tv_devinfo_header"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:gravity="center"
+	        android:text="Glückwunsch!\n Du bist jetzt Entwickler"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/RealWhite"
+	        android:background="@drawable/custom_button_states"
+	        android:padding="5dp"
+	        android:textSize="20sp"
+	        android:layout_marginBottom="10dp"
+	         />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_settings_edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="So stellst du eigene Inhalte ein:"
+            android:textColor="@color/AppStockDrawerLightBlue"
+            android:layout_marginBottom="10dp"
+            />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_settings_edit_account2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/developer_info_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/AppStockDrawerGrey"
+             />
+        
+        <com.technisat.appstock.app.CustomButton
+            android:id="@+id/btn_devinfo_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_states"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="zurück zum App Stock"
+            android:gravity="center"
+            android:textColor="@color/RealWhite" />
+
+
+        
+    </LinearLayout>
+
+</ScrollView>

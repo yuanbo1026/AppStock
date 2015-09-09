@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="66dp"  
+    android:background="@color/RealWhite">
+ 	
+    <ImageView 
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/iv_child_item_icon"
+        android:layout_centerVertical="true"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_cat_finances"
+        />
+ 
+    <com.technisat.appstock.app.CustomTextView
+        android:layout_alignTop="@id/iv_child_item_icon"
+        android:layout_toRightOf="@id/iv_child_item_icon"
+        android:id="@+id/lblListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:text="Example" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/v_list_divider"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/AppStockDrawerLightGrey"
+        android:visibility="gone"
+        />
+ 
+</RelativeLayout>

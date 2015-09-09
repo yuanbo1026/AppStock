@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/promotion_banner"
+      android:background="@drawable/price_gradient_background"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >       
+      <com.technisat.appstock.app.CustomTextView 
+          android:text="ANDROID APPS"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/promotion_title"
+          android:textSize="23sp"
+          android:textColor="@color/RealWhite"
+          android:layout_marginTop="30dp"
+          />
+      <com.technisat.appstock.app.CustomTextView 
+          android:text="BIS ZU 15% GUNSTIGER"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="23sp"
+          android:id="@+id/promotion_title_cd"
+          android:layout_below="@id/promotion_title"
+          android:textColor="@color/RealWhite"
+          android:layout_centerHorizontal="true"
+          />
+      <com.technisat.appstock.app.CustomTextView 
+          android:text="NUR HIER IM APPSTOCK!"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:layout_below="@id/promotion_title_cd"
+          android:textColor="@color/RealWhite"
+          android:layout_centerHorizontal="true"
+          android:paddingBottom="30dp"
+          />
+      
+  </RelativeLayout>

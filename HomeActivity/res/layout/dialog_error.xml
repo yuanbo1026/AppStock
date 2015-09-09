@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/AppStockDrawerLightGrey" >
+
+    <com.technisat.appstock.app.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_message"
+        android:gravity="center"
+        android:text="Bitte uberprufen Sie Die Email Adresse!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/AppStockDrawerLightBlue" />
+
+    <com.technisat.appstock.app.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/error_message"
+        android:id="@+id/btn_dismiss"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/custom_button" 
+        android:layout_marginTop="10dp"       
+        android:padding="7dp"
+        android:text="OK"
+        android:textColor="@color/RealWhite" />
+
+</RelativeLayout>

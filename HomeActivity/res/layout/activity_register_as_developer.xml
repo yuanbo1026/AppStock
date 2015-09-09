@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppStockDrawerLightGrey" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            >
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_settings_edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allgemeine Geschäftsbedingungen"
+            android:textColor="@color/AppStockDrawerLightBlue"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_settings_edit_account2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imprintactivity.text.imprint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/AppStockDrawerGrey"
+            android:gravity="center"
+             />
+        
+        <CheckBox
+            android:id="@+id/checkBox_dev_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/AppStockDrawerGrey"
+            android:text="Akzeptieren"
+ 			android:button="@drawable/checkbox_gray" 
+ 			/>
+
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_settings_private_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Auszahlungs-Konto hinzufügen"
+            android:textColor="@color/AppStockDrawerLightBlue"
+            />
+
+        <com.technisat.appstock.app.CustomEditText
+            android:id="@+id/et_dev_ownername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/custom_edittext_states"
+            android:hint="Name des Kontoinhabers"
+            android:singleLine="true"
+            android:lines="1"
+    		android:maxLines="1"
+            android:textSize="20sp"
+            android:padding="7dp" />
+
+        <com.technisat.appstock.app.CustomEditText
+            android:id="@+id/et_dev_iban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext_states"
+            android:hint="IBAN"
+            android:singleLine="true"
+            android:lines="1"
+    		android:maxLines="1"
+            android:textSize="20sp"
+            android:padding="7dp" />
+
+        <com.technisat.appstock.app.CustomEditText
+            android:id="@+id/et_dev_bic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext_states"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:lines="1"
+    		android:maxLines="1"
+            android:hint="BIC"
+            android:padding="7dp" />
+
+        <com.technisat.appstock.app.CustomTextView
+            android:id="@+id/tv_dev_paytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:textColor="@color/AppStockDrawerGrey"
+            android:text="Um dich als Entwickler zu registrieren, ist eine einmalige Gebühr von 20 Euro fällig."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <com.technisat.appstock.app.CustomButton
+            android:id="@+id/btn_dev_pay_and_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button_states"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:text="Jetzt bezahlen"
+            android:gravity="center"
+            android:textColor="@color/RealWhite" />
+    </LinearLayout>
+
+</ScrollView>

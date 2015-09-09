@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AllContentTypesActivity" >
+	
+    <ImageView
+        android:layout_width="120dp"
+    	android:layout_height="120dp"
+    	android:src="@drawable/login_logo"
+    	android:layout_centerHorizontal="true"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginBottom="10dp"
+		android:id="@+id/iv_logo"
+    	/>
+    
+    <EditText
+        android:id="@+id/et_login_message"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_edittext_focused"
+        android:hint="..schreibe den Entwicklern :)"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:visibility="gone" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/iv_logo"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"  >
+        
+        <com.technisat.appstock.app.CustomEditText
+        android:id="@+id/et_login_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Benutzername"
+        android:textSize="20sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp" />
+    
+    <com.technisat.appstock.app.CustomEditText
+        android:id="@+id/et_login_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_login_email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Passwort"
+        android:textSize="20sp"
+        android:textColor="@color/AppStockDrawerGrey"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp" />
+    
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/b_login_anmelden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_login_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_states"
+        android:text="Anmelden"
+        android:textSize="20sp"
+        android:textColor="@color/RealWhite"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp" />
+    
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/tv_login_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/b_login_anmelden"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Passwort vergessen?"
+        android:textColor="@color/RadiothekGrey" />
+    
+    <com.technisat.appstock.app.CustomButton
+        android:id="@+id/tv_login_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/b_login_anmelden"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Account erstellen"
+        android:background="@null"
+        android:textColor="@color/AppStockDrawerGreen" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="RadiothekBlueLight">#1abc9c</color>
+    <color name="RadiothekBlueDark">#1e303d</color>
+    <color name="RadiothekBlueLight75">#E61abc9c</color>
+    <color name="RadiothekGrey">#a1a1a1</color>
+    <color name="RadiothekWhite">#ececec</color>
+    <color name="RealWhite">#fff</color>
+    <color name="AppStockBackgroundGray">#ffe7e7e7</color>
+    <color name="AppStockLightGreen">#eaf4d2</color>
+    <color name="AppStockRed">#ff0000</color>
+    
+    <color name="AppStockDarkBlue">#45818e</color>
+    <color name="AppStockGrey">#cecece</color>
+    <color name="AppStockDrawerLightGreen">#BDD875</color>
+    <color name="AppStockDrawerGreen">#95C11F</color>
+    <color name="AppStockDrawerDarkGreen">#88B316</color>
+    <color name="AppStockDrawerGrey">#ADADAD</color>
+    <color name="AppStockDrawerLightGrey">#E7E7E7</color>
+    <color name="AppStockDrawerLightBlue">#00A9B5</color>
+    <color name="AppStockDrawerTrueBlue">#009FE3</color>
+    
+    <color name="AppStockTransparentBlue">#AA00A9B5</color>
+    
+    <color name="AppStockPriceCutRabatt">#00666E</color>
+    <color name="Transparent">#00000000</color>
+</resources>

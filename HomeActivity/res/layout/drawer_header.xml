@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppStockDrawerHeader"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp" >
+    
+    <com.technisat.appstock.utils.RoundedImageView 
+        android:layout_height="48px"
+        android:layout_width="48px"
+        android:src="@drawable/user_icon"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:id="@+id/avatar_image"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/avatar_image"
+        >
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/txt_account_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Angemeldet als:"
+        android:textColor="@color/RealWhite"
+        android:textSize="12dp" />
+    
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/txt_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Daniel Fredrich"
+        android:textColor="@color/AppStockDrawerGreen"
+        android:textSize="16dp" />
+		</LinearLayout>
+    
+
+</RelativeLayout>

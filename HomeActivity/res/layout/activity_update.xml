@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_current_version_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockDrawerGrey" />
+
+    <com.technisat.appstock.app.CustomTextView
+        android:id="@+id/tv_lastest_version_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/AppStockDrawerGrey" />
+
+    <!--
+          Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="UPDATE" /
+    -->
+
+    <ProgressBar
+        android:id="@+id/update_progress_spinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

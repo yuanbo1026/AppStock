@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/update_btn_container"
+    android:background="@color/AppStockDrawerLightGreen"
+    android:visibility="visible"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="100"
+    >
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/btn_update_all"
+        android:background="#94C11E"
+        android:padding="10dp"
+        >
+        <com.technisat.appstock.app.CustomTextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/RealWhite"
+	        android:text="Alle Apps updaten"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/tv_update_all"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="19sp"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_update_all"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_update_all"
+            android:layout_alignBottom="@id/tv_update_all"
+            />
+    </RelativeLayout> 
+</LinearLayout>
