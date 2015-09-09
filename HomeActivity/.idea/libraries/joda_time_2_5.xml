@@ -2,10 +2,6 @@
   <library name="joda-time-2.5">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libs/joda-time-2.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/libs/ocpsoft-pretty-time-1.0.7.jar!/" />
-      <root url="jar://$PROJECT_DIR$/libs/PayPalAndroidSDK-2.8.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/libs/picasso-2.4.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/libs/universal-image-loader-1.9.3.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
